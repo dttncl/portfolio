@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Pacifico&display=swap')
+
+$font-text: Inter
+$font-head: Pacifico
+
+main
+    font-size: 10px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "welcome projects" "summary toolbox"
+
+.welcome
+    grid-area: welcome
+    * 
+        margin: 0
+    p 
+        font: 4rem $font-head
+
+.projects
+    grid-area: projects
+    h2
+        font-weight: bold
+        margin-top: 0
+
+.summary
+    grid-area: summary
+    padding: 2rem
+
+.toolbox
+    grid-area: toolbox
+    h2
+        font: 2rem $font-head
+        margin-top: 0
+
+h1, h2
+    font: 1.5rem $font-text
+
+p 
+    font: 1rem $font-text
+
+.project-list
+    display: flex
+    flex-direction: horizontal
+    flex-wrap: wrap
+    
+
