@@ -11,6 +11,8 @@ main
     grid-template-areas: "welcome projects" "summary toolbox"
 
 .welcome
+    padding-top: 2rem
+    padding-left: 2rem
     grid-area: welcome
     * 
         margin: 0
@@ -44,4 +46,67 @@ p
     flex-direction: horizontal
     flex-wrap: wrap
     
+.toolbox-container
+    display: flex
+    flex-direction: horizontal
+    flex-wrap: wrap
+    justify-content: space-evenly
+    row-gap: 3em
+    div
+        flex-basis: 20%
+        width:6em
+        height:6em
 
+#html5Img
+    background: url(../assets/images/html5.svg) no-repeat center
+
+#css3Img
+    background: url(../assets/images/css3.svg) no-repeat center
+
+#jscriptImg
+    background: url(../assets/images/javascript.svg) no-repeat center
+
+#phpImg
+    background: url(../assets/images/php.svg) no-repeat center
+
+#pythonImg
+    background: url(../assets/images/python.svg) no-repeat center
+
+#gitImg
+    background: url(../assets/images/git.svg) no-repeat center
+
+#javaImg
+    background: url(../assets/images/java.svg) no-repeat center
+
+#csharpImg
+    background: url(../assets/images/csharp.svg) no-repeat center
+
+#djangoImg
+    background: url(../assets/images/django.svg) no-repeat center
+
+#angularImg
+    background: url(../assets/images/angularjs.svg) no-repeat center
+
+#dotnetImg
+    background: url(../assets/images/dotnetcore.svg) no-repeat center
+
+#sqlserverImg
+    background: url(../assets/images/microsoftsqlserver.svg) no-repeat center
+
+#githubImg
+    background: url(../assets/images/github.svg) no-repeat center
+    width:3em
+    height:3em
+    &:hover
+        cursor: pointer
+
+#linkedinImg
+    background: url(../assets/images/linkedin.svg) no-repeat center
+    width:3em
+    height:3em
+    &:hover
+        cursor: pointer
+
+.social-container
+    display: flex
+    gap: 2em

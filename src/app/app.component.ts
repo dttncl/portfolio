@@ -12,4 +12,12 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
   title = 'portfolio';
+
+  openGitHub() {
+    open('https://github.com/dttncl');
+  }
+
+  openLinkedIn() {
+    open('https://www.linkedin.com/in/bnhfernando/');
+  }
 }
