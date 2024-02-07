@@ -12,14 +12,14 @@
   <p>It’s a pleasure having you here!<br><br>
     My name is Bernadette, your friendly software developer. One simple spark of interest from a pregnant physics professor has evolved into a passion that I haven't stopped chasing since. Currently a student at LaSalle College in Montreal, pursuing my Programmer Analyst diploma, my mission is to turn my creative problem solving skills as a career.</p>
   <button id="viewCV" (click)="openCV()">View My CV</button>
-  </div>
+</div>
 <div class="projects">
   <h2>Featured Projects</h2>
   <div class="project-list">
-    <ul class="projects">
-      <li *ngFor="let project of projects">
+    <ul class="projects-list-items">
+      <li *ngFor="let project of projects" class="projects-list-item">
         <h3><a href="{{project.link}}" target="_blank">{{project.name}}</a></h3>
-        <span class="language">{{project.lang}}</span>
+        <span class="language">{{project.lang}}</span><br>
         <span class="description">{{project.desc}}</span>
       </li>
     </ul>

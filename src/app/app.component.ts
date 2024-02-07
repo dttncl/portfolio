@@ -28,7 +28,7 @@ export class AppComponent {
   }
 
   openCV() {
-    open('../assets/files/resume.pdf');
+    open('../assets/files/Bernadette-Fernando-Resume.pdf');
   }
 
   // function to get all the projects
