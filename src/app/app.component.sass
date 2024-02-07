@@ -11,15 +11,22 @@ main
     grid-template-areas: "welcome projects" "summary toolbox"
 
 .welcome
+    border: 0.5rem solid #1572B6
+    border-radius: 0.5rem
     padding-top: 2rem
     padding-left: 2rem
     grid-area: welcome
+    display: flex
     * 
         margin: 0
     p 
         font: 4rem $font-head
+        color: #1572B6
+    
 
 .projects
+    padding: 2rem
+    padding-top: 0
     grid-area: projects
     overflow-y: scroll
     &::-webkit-scrollbar
@@ -38,6 +45,7 @@ main
     padding: 2rem
 
 .toolbox
+    padding-left: 2rem
     grid-area: toolbox
     h2
         font: 2rem $font-head
@@ -64,6 +72,12 @@ p
         flex-basis: 15%
         width:6em
         height:6em
+
+#portfolioImg
+    width:100%
+    height:auto
+    background: url(../assets/images/girl.svg) no-repeat center
+    background-size: contain
 
 #html5Img
     background: url(../assets/images/html5.svg) no-repeat center
@@ -116,8 +130,10 @@ p
         cursor: pointer
 
 .social-container
+    padding-top: 10px
     display: flex
     gap: 2em
+    
 
 #viewCV
     background-color: #1572B6
