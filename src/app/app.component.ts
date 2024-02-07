@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { ProjectService } from './project.service';
+import { Project } from './project';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,10 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
   title = 'portfolio';
+  projects: Project[] = [];
+
+
+  constructor(private projectService: ProjectService) {}
 
   openGitHub() {
     open('https://github.com/dttncl');
@@ -23,5 +29,18 @@ export class AppComponent {
 
   openCV() {
     open('../assets/files/resume.pdf');
+  }
+
+  // function to get all the projects
+  getProjects(): void {
+
+    // handle an observable
+    this.projectService.getProjects()
+      .subscribe(projects => this.projects = projects);
+  }
+
+  // execute the function after constructing AppComponent instance
+  ngOnInit(): void {
+    this.getProjects();
   }
 }
