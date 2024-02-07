@@ -20,4 +20,8 @@ export class AppComponent {
   openLinkedIn() {
     open('https://www.linkedin.com/in/bnhfernando/');
   }
+
+  openCV() {
+    open('../assets/files/resume.pdf');
+  }
 }
