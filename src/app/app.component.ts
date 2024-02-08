@@ -13,7 +13,7 @@ import { Project } from './project';
 })
 
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Bernadette Corner';
   projects: Project[] = [];
 
 
