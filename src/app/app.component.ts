@@ -13,7 +13,7 @@ import { Project } from './project';
 })
 
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Bernadette Corner';
   projects: Project[] = [];
 
 
@@ -28,7 +28,7 @@ export class AppComponent {
   }
 
   openCV() {
-    open('../assets/files/Bernadette-Fernando-Resume.pdf');
+    open('../assets/Bernadette-Fernando-Resume.pdf');
   }
 
   // function to get all the projects
